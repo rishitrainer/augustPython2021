@@ -36,5 +36,6 @@ def validation(cust_id, cust_name, cust_zipcode):
 say_hello(name="David") # Keyed parameter - passing key=value
 say_hello("Neil")
 say_hello(100)
+print(type(say_hello))
 is_valid = validation(cust_zipcode="30080", cust_id="10001", cust_name="Ri$hi")
 print("Is Customer Valid", is_valid)

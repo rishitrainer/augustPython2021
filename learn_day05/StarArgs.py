@@ -2,8 +2,9 @@
 *args - optional parameter list
 **kwargs
 '''
-def validation(cust_id, cust_name, cust_zipcode, **kwargs):
+def validation(cust_id, cust_name, cust_zipcode, *args, **kwargs):
     print(cust_id, cust_name, cust_zipcode)
+    print(type(args))
     for eachArg in kwargs:
         if eachArg == "address1":
             print("Handle String validation on address", kwargs.get(eachArg))
