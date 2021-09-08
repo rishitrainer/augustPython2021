@@ -1,0 +1,38 @@
+1. Check if File exists
+2. Open file and Iterate
+3. Start Reading Each Row
+4. Start writing Validation Methods for Every Column 
+5. Consolidate Error message for each Row to form a Single String
+6. Write CSV file with Error <Original_FIle_name_Error.csv>
+7. Send this Error File to ActiveMQ Queue - ActiveMQ
+8. Start inserting Valid Records in Database - MySQL
+9. Exception handling when insert fails / anything fails while processing 
+
+ValidationError
+	NameError
+	InvalidChannelNumberError
+	InvalidTimeFormatError
+
+9. Insert JSON Data in MongoDB 
+
+
+Python --> SQL --> MySQL
+Python --> MySQL Client --> SQL --> MySQL
+
+MySQL --> MySQL Client --> Python
+
+1. Install Connector / Client
+
+pip install mysql-connector-python
+
+2. mysqlclient -
+Host: localhost 
+Port: 3306 
+Login User: root
+Password: password
+database : sakila
+
+3. Cursor - Active Connection between DB and Python
+
+
+close connection
