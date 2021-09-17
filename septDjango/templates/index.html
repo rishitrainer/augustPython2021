@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>This is My First HTML Content</h3>
+<p>
+Adding some Content from Python </p>
+<p> {{ course }} </p>
+<p> {{ duration }} </p>
+<p> {{ trainer }} </p>
+<p> {{ forum|urlize }}</p>
+<p> {{ years }}</p>
+
+<p>
+<ul>
+{% for eachYear in years %}
+	<li> {{forloop.counter}} - {{ eachYear|add:"1" }} </li>
+{% endfor %}
+</ul>
+</p>
+
+
+
+{% endblock %}
